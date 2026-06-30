@@ -5,8 +5,8 @@ def discount(price, discount_p):
     final_price = price - discount_amount
     return discount_amount, final_price
 
-original_price = 586
-discount_percentage = 20
+original_price = float(input("Enter the original price: "))
+discount_percentage = float(input("Enter the discount percentage: "))
 discount_amount, final_price = discount(original_price, discount_percentage)
 print(f'Original Price: {original_price}')
 print(f'Discount Percentage: {discount_percentage}%')
@@ -31,8 +31,8 @@ def grade_assignment(percentage):
     else:
         return 'F'
     
-marks_obtained = 85
-total_marks = 100
+marks_obtained = int(input("Enter the marks obtained: "))
+total_marks = int(input("Enter the total marks: "))
 percentage = cal_percentage(marks_obtained, total_marks)
 grade = grade_assignment(percentage)
 print(f'Marks Obtained: {marks_obtained}')
@@ -48,8 +48,8 @@ def salary_increase(current_salary, increase_percentage):
     new_salary = current_salary + increase_amount
     return increase_amount, new_salary
 
-current_salary = 50000
-increase_percentage = 10
+current_salary = float(input("Enter your current salary: "))
+increase_percentage = float(input("Enter the increase percentage: "))
 increase_amount, new_salary = salary_increase(current_salary, increase_percentage)
 print(f'Current Salary: {current_salary}')
 print(f'Increase Percentage: {increase_percentage}%')
